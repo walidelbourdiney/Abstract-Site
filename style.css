@@ -76,14 +76,15 @@ button:hover {
     align-items: flex-start;
   }
 }
-
-header {
+.bkGround {
   backdrop-filter: blur(7px) saturate(104%);
   -webkit-backdrop-filter: blur(7px) saturate(104%);
   background-color: rgba(189, 16, 224, 0.06);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  padding: 20px;
+}
+
+header {
   margin-top: 10px;
   border-radius: 5px;
 }
@@ -119,11 +120,6 @@ header {
 }
 
 .hero {
-  backdrop-filter: blur(7px) saturate(104%);
-  -webkit-backdrop-filter: blur(7px) saturate(104%);
-  background-color: rgba(189, 16, 224, 0.06);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 20px;
   margin-top: 10px;
   border-radius: 5px;
@@ -132,6 +128,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 3em;
+  height: 30vw;
 }
 
 .input-container {
@@ -158,4 +155,27 @@ header {
   font-size: 40px;
   color: #7c7c7c;
   pointer-events: none; /* Prevent interaction with the icon */
+}
+.serfices {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.service {
+  gap: 20px;
+}
+.sooter-info {
+  flex-direction: column;
+  flex: 1 1 20%; /* Allows the sections to align properly in a grid */
+  margin-bottom: 20px;
+}
+
+footer > .last {
+  flex: 1 1 100%; /* Makes the last section take full width */
+  margin-top: 50px;
+  text-align: center; /* Centers content for better design */
 }
