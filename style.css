@@ -133,29 +133,29 @@ header {
   align-items: center;
   font-size: 3em;
 }
-.hero input {
-  width: 40%;
-  border-style: none;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 1.5rem;
-}
+
 .input-container {
   position: relative;
-}
-
-.input-container .icon {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: #888; /* Icon color */
-  pointer-events: none; /* Makes icon unclickable */
+  display: inline-block;
 }
 
 .input-container input {
   width: 100%;
-  padding-left: 35px; /* Add padding to avoid overlapping with the icon */
+  padding-right: 30px; /* Space for the icon */
+  padding-left: 10px;
   height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-size: 16px;
+  outline: none;
+}
+
+.input-container .icon {
+  position: absolute;
+  right: 5px;
+  top: 65%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #7c7c7c;
+  pointer-events: none; /* Prevent interaction with the icon */
 }
