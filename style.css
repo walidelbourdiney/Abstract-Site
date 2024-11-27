@@ -140,3 +140,22 @@ header {
   border-radius: 10px;
   font-size: 1.5rem;
 }
+.input-container {
+  position: relative;
+}
+
+.input-container .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888; /* Icon color */
+  pointer-events: none; /* Makes icon unclickable */
+}
+
+.input-container input {
+  width: 100%;
+  padding-left: 35px; /* Add padding to avoid overlapping with the icon */
+  height: 40px;
+  font-size: 16px;
+}
