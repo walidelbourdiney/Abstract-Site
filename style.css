@@ -164,18 +164,32 @@ header {
   row-gap: 10px;
   margin-top: 10px;
   padding: 5px;
+  margin-bottom: 10px;
 }
 .service {
   gap: 20px;
 }
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: rgba(189, 16, 224, 0.3) !important;
+}
+footer a {
+  color: var(--white);
+}
+
 .sooter-info {
   flex-direction: column;
   flex: 1 1 20%; /* Allows the sections to align properly in a grid */
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 footer > .last {
   flex: 1 1 100%; /* Makes the last section take full width */
   margin-top: 50px;
   text-align: center; /* Centers content for better design */
+  -ms-flex-align: end;
 }
